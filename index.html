@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jiacheng Zhang | CS Student, CV & Graphics</title>
+    <meta
+      name="description"
+      content="Personal homepage for a university student focused on computer vision, computer graphics, 3D Gaussian Splatting, and real-time rendering."
+    />
+    <meta property="og:title" content="Jiacheng Zhang | CS Student, CV & Graphics" />
+    <meta
+      property="og:description"
+      content="Personal homepage for a university student focused on computer vision, computer graphics, 3D Gaussian Splatting, and real-time rendering."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-username.github.io/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="no-js">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top">JZ</a>
+        <div class="header-actions">
+          <nav class="nav" aria-label="Primary">
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#education" data-i18n="nav.education">Education</a>
+            <a href="#stack" data-i18n="nav.stack">Tech Stack</a>
+            <a href="#projects" data-i18n="nav.projects">Projects</a>
+            <a href="#publications" data-i18n="nav.publications">Publications</a>
+            <a href="#contact" class="btn btn-small" data-i18n="nav.contact">Contact</a>
+          </nav>
+          <div class="lang-switch" role="group" aria-label="Language switch">
+            <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">
+              EN
+            </button>
+            <button class="lang-btn" type="button" data-lang="zh" aria-pressed="false">
+              中文
+            </button>
+          </div>
+          <div class="theme-toggle" role="group" aria-label="Theme switch">
+            <button class="theme-btn" type="button" data-theme-toggle aria-pressed="false">
+              Dark
+            </button>
+          </div>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-i18n="nav.menu"
+          >
+            Menu
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#stack" data-i18n="nav.stack">Tech Stack</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#publications" data-i18n="nav.publications">Publications</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Peking University | Class of 2023</p>
+            <h1 data-i18n="hero.title">
+              Exploring 3D vision and real-time graphics for immersive systems.
+            </h1>
+            <p class="lead" data-i18n="hero.lead">
+              Intelligent Science and Technology student focused on computer vision and computer
+              graphics. Research interests include 3D Gaussian Splatting (3DGS) and real-time
+              rendering.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.projects">
+                View projects
+              </a>
+              <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta.contact">
+                Connect with me
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-value">2023</span>
+                <span class="stat-label" data-i18n="hero.stat.classyear">Class year</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">2</span>
+                <span class="stat-label" data-i18n="hero.stat.research">Active research threads</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">3D</span>
+                <span class="stat-label" data-i18n="hero.stat.focus">Vision focus</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card-header" data-i18n="hero.card.title">Current focus</div>
+            <ul class="card-list">
+              <li data-i18n="hero.card.item1">
+                Studying Intelligent Science and Technology at Peking University.
+              </li>
+              <li data-i18n="hero.card.item2">
+                Working on 3DGS pipelines and real-time rendering experiments.
+              </li>
+              <li data-i18n="hero.card.item3">
+                Actively seeking lab internships and collaborative projects.
+              </li>
+            </ul>
+            <div class="card-footer">
+              <span class="status-dot"></span>
+              <span data-i18n="hero.card.available">Available for research opportunities.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about reveal" id="about">
+        <div class="container split">
+          <div>
+            <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+            <h2 data-i18n="about.title">Student researcher focused on 3D perception.</h2>
+            <p data-i18n="about.body">
+              I am Jiacheng Zhang (Kashing Zhang), an Intelligent Science and Technology student at
+              Peking University. I focus on reconstructing and rendering 3D scenes efficiently, at
+              the intersection of computer vision and computer graphics, especially 3DGS and
+              real-time rendering.
+            </p>
+            <div class="pill-group">
+              <span data-i18n="about.pill.vision">Computer vision</span>
+              <span data-i18n="about.pill.graphics">Computer graphics</span>
+              <span data-i18n="about.pill.3dgs">3D Gaussian Splatting</span>
+              <span data-i18n="about.pill.render">Real-time rendering</span>
+            </div>
+          </div>
+          <div class="about-cards">
+            <article>
+              <h3 data-i18n="about.card1.title">Research focus</h3>
+              <p data-i18n="about.card1.body">
+                Modeling 3D scenes with efficient representations for fast rendering.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="about.card2.title">Experimentation</h3>
+              <p data-i18n="about.card2.body">
+                Prototype pipelines, benchmark performance, and iterate on quality.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="about.card3.title">Implementation</h3>
+              <p data-i18n="about.card3.body">
+                Build reproducible demos and real-time rendering proofs of concept.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects reveal" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="projects.eyebrow">Selected work</p>
+              <h2 data-i18n="projects.title">Project experience</h2>
+            </div>
+            <a href="#contact" class="text-link" data-i18n="projects.cta">Request full portfolio</a>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-meta">
+                <span data-i18n="projects.p1.meta1">Research</span>
+                <span data-i18n="projects.p1.meta2">4DGS</span>
+              </div>
+              <h3 data-i18n="projects.p1.title">Visual feature uplift for dynamic 3D scenes</h3>
+              <p data-i18n="projects.p1.desc">
+                Lifted 2D features (e.g., CLIP) into 3D for dynamic scenes based on 4DGS, enabling
+                downstream open-vocabulary editing.
+              </p>
+              <div class="project-tags">
+                <span data-i18n="projects.p1.tag1">4DGS</span>
+                <span data-i18n="projects.p1.tag2">Open-vocab</span>
+                <span data-i18n="projects.p1.tag3">Feature lifting</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-meta">
+                <span data-i18n="projects.p2.meta1">Reproduction</span>
+                <span data-i18n="projects.p2.meta2">NeRF</span>
+              </div>
+              <h3 data-i18n="projects.p2.title">NeRF / D-NeRF reproduction</h3>
+              <p data-i18n="projects.p2.desc">
+                Reproduced NeRF and D-NeRF pipelines and evaluated reconstruction quality and
+                temporal consistency.
+              </p>
+              <div class="project-tags">
+                <span data-i18n="projects.p2.tag1">NeRF</span>
+                <span data-i18n="projects.p2.tag2">D-NeRF</span>
+                <span data-i18n="projects.p2.tag3">Evaluation</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-meta">
+                <span data-i18n="projects.p3.meta1">Course project</span>
+                <span data-i18n="projects.p3.meta2">Software</span>
+              </div>
+              <h3 data-i18n="projects.p3.title">WhatToEat</h3>
+              <p data-i18n="projects.p3.desc">
+                Peking University cafeteria menu intro and recommendation app with a fun blind box
+                feature.
+              </p>
+              <div class="project-tags">
+                <span data-i18n="projects.p3.tag1">Management</span>
+                <span data-i18n="projects.p3.tag2">Recommendation</span>
+                <span data-i18n="projects.p3.tag3">Blind box</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services reveal" id="stack">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="stack.eyebrow">Tech stack</p>
+              <h2 data-i18n="stack.title">Tools I use</h2>
+            </div>
+            <p class="section-note" data-i18n="stack.note">
+              Comfortable across design, code, and research workflows.
+            </p>
+          </div>
+          <div class="service-grid">
+            <article>
+              <h3 data-i18n="stack.core.title">Core languages</h3>
+              <p data-i18n="stack.core.body">
+                Python, C++, CUDA basics, JavaScript for demos and tooling.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="stack.graphics.title">Graphics & vision</h3>
+              <p data-i18n="stack.graphics.body">
+                OpenCV, OpenGL, Vulkan, PyTorch, 3DGS pipelines, real-time rendering.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="stack.tools.title">Research tools</h3>
+              <p data-i18n="stack.tools.body">Blender, NVIDIA Nsight Graphics.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section timeline reveal" id="education">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="education.eyebrow">Education</p>
+              <h2 data-i18n="education.title">Academic background</h2>
+            </div>
+            <p class="section-note" data-i18n="education.note">
+              Focus on computer vision and computer graphics.
+            </p>
+          </div>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <span class="timeline-year" data-i18n="education.item1.year">2023-Present</span>
+              <div>
+                <h3 data-i18n="education.item1.title">
+                  B.S. in Intelligent Science and Technology, Peking University
+                </h3>
+                <p data-i18n="education.item1.body">
+                  Focus on computer vision, computer graphics, and real-time rendering.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section publications reveal" id="publications">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="publications.eyebrow">Publications</p>
+              <h2 data-i18n="publications.title">Selected papers</h2>
+            </div>
+            <p class="section-note" data-i18n="publications.note">
+              In preparation. Updates will be added here.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact reveal" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">Let's connect for research and internships.</h2>
+            <p data-i18n="contact.body">
+              Open to lab internships and collaborative projects. Share your lab, project topic,
+              or timeline. I usually respond within 24 hours with next steps.
+            </p>
+            <div class="contact-info">
+              <a href="mailto:zhangjiacheng@stu.pku.edu.cn">zhangjiacheng@stu.pku.edu.cn</a>
+              <a href="https://github.com/BruceZhang404">github.com/BruceZhang404</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <h3 data-i18n="contact.card.title">Quick intro</h3>
+            <p data-i18n="contact.card.body">Send a short note with three points:</p>
+            <ol>
+              <li data-i18n="contact.card.item1">Opportunity or project type</li>
+              <li data-i18n="contact.card.item2">Expected scope and timeline</li>
+              <li data-i18n="contact.card.item3">How I can help</li>
+            </ol>
+            <a
+              class="btn btn-primary"
+              href="mailto:zhangjiacheng@stu.pku.edu.cn"
+              data-i18n="contact.card.cta"
+            >
+              Email me
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <span class="logo">JZ</span>
+          <p data-i18n="footer.tagline">Designed and built with curiosity and care.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#top" data-i18n="footer.backtotop">Back to top</a>
+          <a href="https://github.com/BruceZhang404">GitHub</a>
+          <a href="mailto:zhangjiacheng@stu.pku.edu.cn" data-i18n="footer.email">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

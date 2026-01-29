@@ -1,28 +1,59 @@
+@font-face {
+  font-family: "BMSPA";
+  src: url("BMSPA.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FOT RodinProN M";
+  src: url("FOT-RodinProN-M.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FOT Skip Std B";
+  src: url("FOT-Skip Std B.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --bg: #0a0a0f;
-  --bg-gradient: linear-gradient(140deg, rgba(10, 179, 245, 0.12), transparent 40%);
-  --ink: #f7f7fb;
+  --bg: #0b1030;
+  --bg-gradient: linear-gradient(135deg, #0b1030 0%, #0f1b4a 40%, #081226 85%);
+  --ink: #f7fbff;
   --ink-dark: #0b0c10;
-  --muted: #c6c9d4;
+  --muted: rgba(247, 251, 255, 0.78);
   --accent: #0ab3f5;
-  --accent-2: #4fd1ff;
-  --highlight: #f2c94c;
-  --card: #fdfdfd;
-  --line: rgba(255, 255, 255, 0.22);
+  --accent-2: #58d9ff;
+  --highlight: #7cf3ff;
+  --card: #102a6b;
+  --card-2: #0f3a86;
+  --card-text: #ffffff;
+  --card-muted: rgba(255, 255, 255, 0.75);
+  --tag-bg: rgba(10, 179, 245, 0.2);
+  --tag-text: #e9fcff;
+  --tag-border: rgba(10, 179, 245, 0.6);
+  --line: rgba(88, 217, 255, 0.35);
   --line-dark: rgba(11, 12, 16, 0.16);
-  --shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
+  --shadow: 0 18px 30px rgba(2, 20, 26, 0.5);
   --radius-md: 12px;
   --radius-sm: 8px;
   --cut: 14px;
-  --font-body: "Noto Sans SC", "Noto Sans", sans-serif;
-  --font-heading: "Noto Serif SC", "Noto Serif", serif;
-  --font-label: "JetBrains Mono", "Noto Sans SC", monospace;
-  --glow-1: radial-gradient(circle at 12% 12%, rgba(10, 179, 245, 0.18), transparent 42%);
-  --glow-2: radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.08), transparent 45%);
-  --dot-color: rgba(255, 255, 255, 0.08);
-  --dot-opacity: 0.25;
-  --header-bg: rgba(10, 10, 15, 0.92);
-  --nav-bg: rgba(10, 10, 15, 0.96);
+  --font-body: "FOT RodinProN M", "BMSPA", sans-serif;
+  --font-heading: "FOT Skip Std B", "FOT RodinProN M", sans-serif;
+  --font-label: "BMSPA", "FOT RodinProN M", monospace;
+  --font-pixel: "BMSPA", "FOT RodinProN M", monospace;
+  --glow-1: radial-gradient(circle at 12% 12%, rgba(16, 63, 255, 0.28), transparent 42%);
+  --glow-2: radial-gradient(circle at 80% 0%, rgba(10, 179, 245, 0.18), transparent 45%);
+  --dot-color: rgba(16, 63, 255, 0.14);
+  --dot-opacity: 0.18;
+  --header-bg: rgba(11, 16, 48, 0.92);
+  --nav-bg: rgba(11, 16, 48, 0.96);
   --toggle-active-bg: var(--ink);
   --toggle-active-text: var(--ink-dark);
   --btn-small-bg: var(--ink);
@@ -30,20 +61,26 @@
 }
 
 html[data-theme="light"] {
-  --bg: #f7f7f9;
-  --bg-gradient: linear-gradient(140deg, rgba(10, 179, 245, 0.1), transparent 45%);
-  --ink: #111217;
+  --bg: #dff7ff;
+  --bg-gradient: linear-gradient(135deg, #dff7ff 0%, #c5f0ff 45%, #b4e8ff 80%);
+  --ink: #071018;
   --ink-dark: #0b0c10;
-  --muted: #4b4f5b;
-  --card: #ffffff;
-  --line: rgba(15, 17, 23, 0.2);
-  --line-dark: rgba(15, 17, 23, 0.2);
-  --glow-1: radial-gradient(circle at 12% 12%, rgba(10, 179, 245, 0.14), transparent 45%);
-  --glow-2: radial-gradient(circle at 80% 0%, rgba(0, 0, 0, 0.05), transparent 45%);
-  --dot-color: rgba(15, 17, 23, 0.08);
-  --dot-opacity: 0.2;
-  --header-bg: rgba(247, 247, 249, 0.9);
-  --nav-bg: rgba(247, 247, 249, 0.95);
+  --muted: rgba(7, 16, 24, 0.75);
+  --card: #f2fbff;
+  --card-2: #dff5ff;
+  --card-text: #071018;
+  --card-muted: rgba(7, 16, 24, 0.65);
+  --tag-bg: rgba(10, 179, 245, 0.18);
+  --tag-text: #003244;
+  --tag-border: rgba(10, 179, 245, 0.45);
+  --line: rgba(10, 179, 245, 0.35);
+  --line-dark: rgba(10, 179, 245, 0.35);
+  --glow-1: radial-gradient(circle at 12% 12%, rgba(10, 179, 245, 0.12), transparent 45%);
+  --glow-2: radial-gradient(circle at 80% 0%, rgba(10, 179, 245, 0.08), transparent 45%);
+  --dot-color: rgba(10, 179, 245, 0.15);
+  --dot-opacity: 0.18;
+  --header-bg: rgba(223, 247, 255, 0.92);
+  --nav-bg: rgba(223, 247, 255, 0.96);
   --toggle-active-bg: var(--ink-dark);
   --toggle-active-text: #fff;
   --btn-small-bg: var(--ink-dark);
@@ -164,9 +201,9 @@ img {
 }
 
 .logo {
-  font-family: var(--font-heading);
+  font-family: var(--font-pixel);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.18em;
 }
 
@@ -345,9 +382,9 @@ img {
 
 .btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: #02141a;
   border-color: var(--accent);
-  box-shadow: 0 10px 24px rgba(10, 179, 245, 0.28);
+  box-shadow: 0 12px 26px rgba(10, 179, 245, 0.45);
 }
 
 .btn-primary::after {
@@ -380,7 +417,7 @@ img {
   top: 40px;
   width: 46%;
   height: 50%;
-  background: rgba(10, 179, 245, 0.14);
+  background: rgba(10, 179, 245, 0.22);
   transform: skew(-10deg);
   z-index: -1;
 }
@@ -447,9 +484,9 @@ h3 {
 }
 
 .stat {
-  background: var(--card);
-  color: var(--ink-dark);
-  border: 2px solid var(--ink-dark);
+  background: var(--card-2);
+  color: var(--card-text);
+  border: 2px solid rgba(10, 179, 245, 0.65);
   border-radius: var(--radius-md);
   padding: 16px;
   box-shadow: var(--shadow);
@@ -465,16 +502,16 @@ h3 {
 
 .stat-label {
   font-size: 0.85rem;
-  color: #4b4f5b;
+  color: var(--card-muted);
 }
 
 .hero-card {
   background: var(--card);
-  color: var(--ink-dark);
+  color: var(--card-text);
   border-radius: var(--radius-md);
   padding: 26px;
   box-shadow: var(--shadow);
-  border: 2px solid var(--ink-dark);
+  border: 2px solid rgba(10, 179, 245, 0.65);
   border-left: 6px solid var(--accent);
   clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, var(--cut) 100%, 0 calc(100% - var(--cut)));
 }
@@ -492,7 +529,7 @@ h3 {
 .card-list {
   padding-left: 18px;
   margin: 0 0 22px;
-  color: #3f4654;
+  color: var(--card-muted);
 }
 
 .card-footer {
@@ -575,7 +612,7 @@ h3 {
 .section-head h2 {
   position: relative;
   display: inline-block;
-  color: var(--ink-dark);
+  color: var(--card-text);
   padding: 6px 16px;
   z-index: 1;
 }
@@ -584,10 +621,10 @@ h3 {
   content: "";
   position: absolute;
   inset: 0;
-  background: #fff;
+  background: var(--card);
   transform: skew(-8deg);
   z-index: -1;
-  border: 2px solid var(--ink-dark);
+  border: 2px solid rgba(10, 179, 245, 0.65);
 }
 
 .section-note {
@@ -605,9 +642,9 @@ h3 {
 .project-card {
   padding: 22px;
   border-radius: var(--radius-md);
-  background: #fff;
-  color: var(--ink-dark);
-  border: 2px solid var(--ink-dark);
+  background: var(--card);
+  color: var(--card-text);
+  border: 2px solid rgba(10, 179, 245, 0.65);
   box-shadow: var(--shadow);
   display: grid;
   gap: 12px;
@@ -618,7 +655,7 @@ h3 {
   display: flex;
   gap: 12px;
   font-size: 0.7rem;
-  color: #5f6572;
+  color: var(--card-muted);
   font-family: var(--font-label);
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -634,8 +671,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(10, 179, 245, 0.12);
-  color: #0a5b7a;
+  background: var(--tag-bg);
+  color: var(--tag-text);
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.7rem;
@@ -643,7 +680,7 @@ h3 {
   text-transform: none;
   letter-spacing: 0.04em;
   line-height: 1;
-  border: 1px solid rgba(10, 179, 245, 0.35);
+  border: 1px solid var(--tag-border);
 }
 
 .service-grid {
@@ -653,11 +690,11 @@ h3 {
 }
 
 .service-grid article {
-  background: #fff;
-  color: var(--ink-dark);
+  background: var(--card);
+  color: var(--card-text);
   padding: 22px;
   border-radius: var(--radius-md);
-  border: 2px solid var(--ink-dark);
+  border: 2px solid rgba(10, 179, 245, 0.65);
   box-shadow: var(--shadow);
   clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, var(--cut) 100%, 0 calc(100% - var(--cut)));
 }
@@ -672,10 +709,10 @@ h3 {
   grid-template-columns: 100px minmax(0, 1fr);
   gap: 16px;
   padding: 20px;
-  background: #fff;
-  color: var(--ink-dark);
+  background: var(--card);
+  color: var(--card-text);
   border-radius: var(--radius-md);
-  border: 2px solid var(--ink-dark);
+  border: 2px solid rgba(10, 179, 245, 0.65);
   box-shadow: var(--shadow);
   clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, var(--cut) 100%, 0 calc(100% - var(--cut)));
 }
@@ -702,23 +739,23 @@ h3 {
 }
 
 .contact-card {
-  background: #fff;
-  color: var(--ink-dark);
+  background: var(--card);
+  color: var(--card-text);
   padding: 26px;
   border-radius: var(--radius-md);
-  border: 2px solid var(--ink-dark);
+  border: 2px solid rgba(10, 179, 245, 0.65);
   box-shadow: var(--shadow);
   clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, var(--cut) 100%, 0 calc(100% - var(--cut)));
 }
 
 .contact-card ol {
   padding-left: 18px;
-  color: #4f5665;
+  color: var(--card-muted);
 }
 
 .site-footer {
   padding: 36px 0 56px;
-  border-top: 2px solid var(--accent);
+  border-top: 2px solid rgba(10, 179, 245, 0.8);
   font-size: 0.95rem;
 }
 
